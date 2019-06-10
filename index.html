@@ -1,40 +1,19 @@
 <html>
-  <head></head>
-  <body>
-    <font size="17px">
-    <h1>SELECT YOUR PROMO CODE</h1>
-    <table>
-      <tr>
-        <td>
-          <h1>PROMO CODE 1 : </h1>
-        </td>
-        <td>
-          <a href="/test/1231"> 
-            <h1>1231 </h1>
-          </a>
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
-          <h1>PROMO CODE 2 : </h1>
-        </td>
-        <td>
-          <a href="/test/12356"> 
-            <h1>12356 </h1>
-              </a>
-        </td>
-      </tr>
-      
-       <tr>
-        <td><h1>PROMO CODE 3 : </h1></td>
-        <td>
-          <a href="/test/12344">
-            <h1> 12344 </h1>
-          </a>
-        </td>
-      </tr>
-    </table>
+<head>
+    <script>        
+        function hideText() {
+            document.getElementById("demo").style.display = "none";
+        }
     
-  </body>
+        function showText() {
+            document.getElementById("demo").style.display = "block";
+            window.webkit.messageHandlers.pemrek.postMessage("refreshPage");
+        }
+    </script>
+</head>
+<body>
+    <h1><p id="demo">Kent Jonathan.</p></h1>
+    <input type="button" onclick="showText()" value="CALL PAYMENT" style="height:200px; width:400px">
+    <input type="button" onclick="hideText()" value="Hide Text" style="height:200px; width:400px">
+</body>
 </html>
