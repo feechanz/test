@@ -2,18 +2,16 @@
 <head>
     <script>        
         function hideText() {
-            document.getElementById("demo").style.display = "none";
         }
     
         function showText() {
-            document.getElementById("demo").style.display = "block";
             window.webkit.messageHandlers.pemrek.postMessage("refreshPage");
         }
     </script>
 </head>
 <body>
     <h1><p id="demo">Kent Jonathan.</p></h1>
-    <input type="button" onclick="showText()" value="1" style="height:20px; width:40px">
-    <input type="button" onclick="hideText()" value="2" style="height:20px; width:40px">
+    <input type="button" onclick="showText()" value="1" style="height:100px; width:100px">
+    <input type="button" onclick="hideText()" value="2" style="height:100px; width:100px">
 </body>
 </html>
